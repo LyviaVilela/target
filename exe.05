@@ -1,0 +1,14 @@
+def inverter_string(string):
+    string_invertida = ""
+    tamanho = len(string)
+
+    while tamanho > 0:
+        string_invertida += string[tamanho - 1]
+        tamanho -= 1
+    return string_invertida
+
+string_original = 'target'
+string_invertida = inverter_string(string_original)
+
+print('String Original:', string_original)
+print('String invertida:',string_invertida)
