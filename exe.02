@@ -1,0 +1,15 @@
+def fibonacci(numero)
+    a,b = 0,1
+
+    while a <= numero:
+        if a == numero:
+            return True
+        a,b = b, a+b
+    return False
+
+numero_informado = 21
+
+if fibonacci(numero_informado):
+    print('O número {} pertence a sequência de Fibonacci.'.format(numero_informado))
+else:
+    print('O número () NÃO pertence a sequência de Fibonacci.'.format(numero_informado))
